@@ -124,7 +124,7 @@ h4 {
 }
 
 .profile-name {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     padding: 1rem;
 }
@@ -214,7 +214,7 @@ li {
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     padding: 1rem 2rem 2rem;
 }
@@ -237,7 +237,7 @@ li {
 }
 
 .project-description {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--secondary-text);
     margin-bottom: 0.9rem;
 }
@@ -260,4 +260,29 @@ li {
 
 .announce-container {
     background-color: var(--primary-white);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.announcement-item {
+    border-bottom: 1px solid rgb(172, 170, 170);
+    margin-top: 0.8rem;
+}
+
+.announcement-item:first-child {
+    margin-top: 0;
+}
+
+.announcement-item:last-child {
+    border-bottom: none;
+}
+
+.announce-description {
+    color: var(--secondary-text);
+    padding: 0.8rem 0rem;
+}
+
+.announcement-item:last-child .announce-description {
+    padding-bottom: 0;
 }

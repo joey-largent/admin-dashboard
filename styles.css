@@ -1,10 +1,13 @@
+/* UNIVERSALS */
 :root {
     --sidebar-color: #0294e3;
     --sidebar-text: #f4ebeb;
     --primary-text: #000000;
+    --secondary-text: #6e6e6e;
     --primary-white: #ffffff;
-    --background-gray: #e6e6e6;
+    --background-gray: #e0e9f0;
     --shadow-color: #0000001a;
+    --border-color: #fdb328;
 }
 
 * {
@@ -25,6 +28,14 @@ html {
     height: 100vh;
 }
 
+h4 {
+    font-size: 1.5rem;
+ }
+
+ a:hover, button:hover {
+    cursor: pointer;
+ }
+
 /* ICONS */
 
 .dashboard-icon {
@@ -33,7 +44,12 @@ html {
     margin-right: 1rem;
 }
 
-.menu-icon, .project-icon, .header-icon {
+.project-icon {
+    width: 15px;
+    height: auto;
+}
+
+.menu-icon, .header-icon {
     width: 20px;
     height: auto;
 }
@@ -191,3 +207,57 @@ li {
 }
 
 /* PROJECTS */
+
+.projects-head {
+    padding: 2rem 2rem 0rem 2rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 1rem 2rem 2rem;
+}
+
+.card {
+    background-color: var(--primary-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    padding: 2rem;
+    border-left: 5px solid var(--border-color);
+    min-width: 200px;
+    max-height: 200px;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--primary-text);
+}
+
+.project-description {
+    font-size: 1rem;
+    color: var(--secondary-text);
+    margin-bottom: 0.9rem;
+}
+
+.project-btn-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-icon {
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+/* ANNOUNCEMENTS */
+
+.announce-head {
+    padding: 2rem 2rem 1rem 0rem;
+}
+
+.announce-container {
+    background-color: var(--primary-white);
+}

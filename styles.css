@@ -166,7 +166,7 @@ button {
 .sidebar {
     background-color: var(--sidebar-color);
     display: grid;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     color: var(--sidebar-text);
@@ -201,12 +201,16 @@ li {
 .center-container {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-template-rows: auto 1fr;
     background-color: var(--background-gray);
 }
 
 /* PROJECTS */
+
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
 
 .projects-head {
     padding: 2rem 2rem 0rem 2rem;
@@ -225,8 +229,7 @@ li {
     box-shadow: 0 4px 6px var(--shadow-color);
     padding: 2rem;
     border-left: 5px solid var(--border-color);
-    min-width: 200px;
-    max-height: 200px;
+    
 }
 
 .project-title {
@@ -254,7 +257,12 @@ li {
 
 /* ANNOUNCEMENTS */
 
-.announce-head {
+.announcements {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.announce-head, .trend-head {
     padding: 2rem 2rem 1rem 0rem;
 }
 
@@ -266,7 +274,7 @@ li {
 }
 
 .announcement-item {
-    border-bottom: 1px solid rgb(172, 170, 170);
+    border-bottom: 1px solid #acaaaa;
     margin-top: 0.8rem;
 }
 
@@ -285,4 +293,47 @@ li {
 
 .announcement-item:last-child .announce-description {
     padding-bottom: 0;
+}
+
+/* TRENDING */
+
+.trending {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.trending-container {
+    background-color: var(--primary-white);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.trending-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.trending-item:last-child {
+    margin-bottom: 0;
+}
+
+.trending-image {
+    margin-right: 1rem;
+}
+
+.social-handle {
+    color: var(--primary-text)
+}
+
+.social-name {
+    color: var(--secondary-text)
+}
+
+.social-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
